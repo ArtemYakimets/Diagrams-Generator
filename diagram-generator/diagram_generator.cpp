@@ -80,7 +80,7 @@ void generate_svg(const Group& group) {
 }
 
 int main() {
-    std::ifstream input_file("data.txt", std::ios::binary | std::ios::ate);
+    std::ifstream input_file("data.txt");
     if (!input_file.is_open()) {
         std::cerr << "Не удалось открыть файл 'data.txt'!" << std::endl;
         return 1;
